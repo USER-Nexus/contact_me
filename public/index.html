@@ -4,55 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
-    
     <header>
-        <nav class="navbar navbar-dark bg-dark py-3 mb-5">
-            <div class="container-fluid">
-                <span class="navbar-brand m-1 h1">Contact Me!</span>
-            </div>
-        </nav>
+        <nav class="nav-brand"><h1>Contact Me!</h1></nav>
     </header>
-    
-    <main class="container">
-        <form action="">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Name and Surname</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+
+    <main>
+        <form id="form" class="container">
+            <div class="form-control">
+                <label for="name">Name and Surname</label>
+                <input type="text" id="name" placeholder="Your name">
+                <img class="check-circle" src="images/check-circle-fill.svg" alt="">
+                <img class="exclamation" src="images/exclamation-circle-fill.svg" alt="">
+                <small>Error message</small>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your email">
+                <img class="check-circle" src="images/check-circle-fill.svg" alt="">
+                <img class="exclamation" src="images/exclamation-circle-fill.svg" alt="">
+                <small>Error message</small>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput3" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Your Subject">
+            <div class="form-control">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="Your subject">
+                <img class="check-circle" src="images/check-circle-fill.svg" alt="">
+                <img class="exclamation" src="images/exclamation-circle-fill.svg" alt="">
+                <small>Error message</small>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="form-control">
+                <label for="message">Message</label>
+                <textarea id="message" rows="3"></textarea>
+                <img class="check-circle" src="images/check-circle-fill.svg" alt="">
+                <img class="exclamation" src="images/exclamation-circle-fill.svg" alt="">
+                <small>Error message</small>
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput3" class="form-label">Secret</label>
-                <input type="password" class="form-control" id="exampleFormControlInput3" placeholder="Tell me a secret :)">
+            <div class="form-control">
+                <label for="secret">Secret</label>
+                <input type="password" id="secret" placeholder="Tell me a secret :)">
+                <img class="check-circle" src="images/check-circle-fill.svg" alt="">
+                <img class="exclamation" src="images/exclamation-circle-fill.svg" alt="">
+                <small>Error message</small>
             </div>
-            <div class="mb-3">
-                <button type="submit" class="btn btn-primary mb-3">Contact!</button>
-            </div>
+            <button class="button">Contact!</button>
         </form>
     </main>
-    
-    <footer class="d-flex flex-wrap justify-content-center py-3 my-5 bg-light">
-        <div class="d-flex">
-            <span class="text-dark fw-bold">&copy; 2022 Henrique P. Lima</span>
-        </div>
-        <ul class="list-unstyled d-flex">
-            <li class="ms-3"><a href="https://github.com/USER-Nexus" target="_blank" rel="noopener noreferrer"><img height="25px" width="50px" src="images/github.svg" alt=""></a></li>
-          </ul>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+
+    <script src="js/validation.js"></script>
 </body>
 </html>
